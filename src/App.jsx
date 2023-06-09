@@ -14,14 +14,14 @@ import { MobileMenuModal } from './components/MobileMenuModal';
 
 function App() {
   
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
       setOpen(!open);
   }
 
   return (
-    <div>
+    <div className='bg-white border-2 border-black'>
       <Navbar open={open} handleOpen={handleOpen} />
       <Routes>
         <Route path="/"  element={<Home />} />

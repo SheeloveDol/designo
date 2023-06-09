@@ -26,7 +26,7 @@ export const Navbar = ({ open, handleOpen}) => {
                     <li><Link to="/about">OUR COMPANY</Link></li>
                     <li><Link to="/locations">LOCATIONS</Link></li>
                     <li><Link to="/contact">CONTACT</Link></li>
-                </ul>
+                </ul> 
 
 
                 {/*MOBILE MENU BUTTONS */}

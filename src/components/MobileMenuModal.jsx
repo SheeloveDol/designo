@@ -7,14 +7,14 @@ export const MobileMenuModal = ({ open }) => {
     >
         <nav>
             <ul className="pl-6 py-12 text-white bg-black">
-                <li className="pb-5 text-xl"><Link to="/about">OUR COMPANY</Link></li>
-                <li className="pb-5 text-xl"><Link to="/locations">LOCATIONS</Link></li>
-                <li className='text-xl'><Link to="/contact">CONTACT</Link></li>
+                <li className="pb-5 text-xl cursor-pointer"><Link to="/about">OUR COMPANY</Link></li>
+                <li className="pb-5 text-xl cursor-pointer"><Link to="/locations">LOCATIONS</Link></li>
+                <li className='text-xl cursor-pointer'><Link to="/contact">CONTACT</Link></li>
             </ul>
         </nav>
-        <div className="h-full bg-black opacity-10">
+        <div className="h-full bg-black opacity-40">
 
         </div>
-    </div>
+    </div> 
   )
 }
