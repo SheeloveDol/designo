@@ -10,7 +10,7 @@ export const Navbar = ({ open, handleOpen}) => {
     
   return (
     <div>
-        <div className="border-2 border-peach flex justify-between px-4 py-6 bg-white">
+        <div className=" flex justify-between px-4 py-6 bg-white">
             <header className='flex items-center w-52'>
                 <Link to="/">
                     <img src={Logo} alt='logo' />
