@@ -16,7 +16,6 @@ export default {
       'lightGrey' : 'rgb(241, 243, 245)',
     },
 
-
     extend: {},
   },
   plugins: [require("daisyui")],
