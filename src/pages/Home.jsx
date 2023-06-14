@@ -1,8 +1,8 @@
 import HeroImage from "../assets/home/desktop/image-hero-phone.png";
 import BgPattern from "../assets/home/desktop/bg-pattern-hero-home.svg";
-import AppDesingImg from "../assets/home/desktop/image-app-design.jpg"
-import WebDesignImg from "../assets/home/desktop/image-web-design-large.jpg"
-import GraphicDesignImg from "../assets/home/desktop/image-graphic-design.jpg"
+import AppDesingImg from "../assets/home/desktop/image-app-design.jpg";
+import WebDesignImg from "../assets/home/desktop/image-web-design-large.jpg";
+import GraphicDesignImg from "../assets/home/desktop/image-graphic-design.jpg";
 
 export const Home = () => {
   return (
@@ -42,38 +42,55 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      
+
       {/* PROJECTS SECTION */}
-      <section className="mt-32 gap-6 grid lg:grid-rows-2 lg:grid-cols-2 ">
-        <div 
-        className="h-64  rounded-lg bg-no-repeat bg-cover bg-bottom flex flex-col items-center justify-center row-span-2 lg:h-full"
-        style={{
-          backgroundImage: `url('${WebDesignImg}')`
-        }}
+      <section className="mt-32 gap-6 grid  lg:grid-cols-2 ">
+        <div
+          className="h-64 rounded-lg bg-no-repeat bg-cover bg-bottom  row-span-2 lg:h-full cursor-pointer overflow-hidden"
+          style={{
+            backgroundImage: `url('${WebDesignImg}')`,
+          }}
         >
-          <h3 className="text-2xl lg:text-4xl lg:mb-4 text-white">WEB DESIGN</h3>
-          <p className="text-white text-sm leading-9 tracking-[0.5rem]">VIEW PROJECTS</p>
+          <div className="flex flex-col items-center justify-center h-full w-full hover:bg-peach hover:opacity-80">
+            <h3 className="text-2xl lg:text-4xl lg:mb-4 text-white ">
+              WEB DESIGN
+            </h3>
+            <p className="text-white text-sm leading-9 tracking-[0.5rem]">
+              VIEW PROJECTS
+            </p>
+          </div>
         </div>
-        <div 
-        className="h-64 rounded-lg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center"
-        style={{
-          backgroundImage: `url('${AppDesingImg}')`
-        }}
+        <div
+          className="h-64 rounded-lg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center cursor-pointer overflow-hidden"
+          style={{
+            backgroundImage: `url('${AppDesingImg}')`,
+          }}
         >
-          <h3 className="text-2xl lg:text-4xl lg:mb-4 text-white">APP DESIGN</h3>
-          <p className="text-white text-sm leading-9 tracking-[0.5rem]">VIEW PROJECTS</p>
+          <div className="flex flex-col items-center justify-center h-full w-full hover:bg-peach hover:opacity-80">
+            <h3 className="text-2xl lg:text-4xl lg:mb-4 text-white">
+              APP DESIGN
+            </h3>
+            <p className="text-white text-sm leading-9 tracking-[0.5rem]">
+              VIEW PROJECTS
+            </p>
+          </div>
         </div>
-        <div 
-        className="h-64 rounded-lg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center"
-        style={{
-          backgroundImage: `url('${GraphicDesignImg}')`
-        }}
+        <div
+          className="h-64 rounded-lg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center cursor-pointer overflow-hidden"
+          style={{
+            backgroundImage: `url('${GraphicDesignImg}')`,
+          }}
         >
-          <h3 className="text-2xl lg:text-4xl lg:mb-4 text-white">GRAPHIC DESIGN</h3>
-          <p className="text-white text-sm leading-9 tracking-[0.5rem]">VIEW PROJECTS</p>
+          <div className="flex flex-col items-center justify-center h-full w-full hover:bg-peach hover:opacity-80">
+            <h3 className="text-2xl lg:text-4xl lg:mb-4 text-white">
+              GRAPHIC DESIGN
+            </h3>
+            <p className="text-white text-sm leading-9 tracking-[0.5rem]">
+              VIEW PROJECTS
+            </p>
+          </div>
         </div>
       </section>
-
     </div>
   );
 };
