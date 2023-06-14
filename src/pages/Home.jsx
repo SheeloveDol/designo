@@ -3,6 +3,8 @@ import BgPattern from "../assets/home/desktop/bg-pattern-hero-home.svg";
 import AppDesingImg from "../assets/home/desktop/image-app-design.jpg";
 import WebDesignImg from "../assets/home/desktop/image-web-design-large.jpg";
 import GraphicDesignImg from "../assets/home/desktop/image-graphic-design.jpg";
+import { Link } from "react-router-dom";
+import RightArrow from "../assets/shared/desktop/icon-right-arrow.svg";
 
 export const Home = () => {
   return (
@@ -27,9 +29,12 @@ export const Home = () => {
               fully responsive websites, app design, and engaging brand
               experiences. Find out more about our services.
             </p>
-            <button className="mt-10  p-3 text-black bg-white rounded-md">
-              LEARN MORE
-            </button>
+
+            <Link to="/about">
+              <button className="mt-10  p-3 text-black bg-white rounded-md hover:bg-lightPeach hover:text-white">
+                LEARN MORE
+              </button>
+            </Link>
           </div>
           <div className=" ">
             <div
@@ -44,52 +49,74 @@ export const Home = () => {
       </section>
 
       {/* PROJECTS SECTION */}
-      <section className="mt-32 gap-6 grid  lg:grid-cols-2 ">
-        <div
-          className="h-64 rounded-lg bg-no-repeat bg-cover bg-bottom  row-span-2 lg:h-full cursor-pointer overflow-hidden"
-          style={{
-            backgroundImage: `url('${WebDesignImg}')`,
-          }}
-        >
-          <div className="flex flex-col items-center justify-center h-full w-full hover:bg-peach hover:opacity-80">
-            <h3 className="text-2xl lg:text-4xl lg:mb-4 text-white ">
-              WEB DESIGN
-            </h3>
-            <p className="text-white text-sm leading-9 tracking-[0.5rem]">
-              VIEW PROJECTS
-            </p>
+      <section className="mt-32 mx-6 gap-6 grid  lg:grid-cols-2 ">
+
+        {/*Web Design card */}
+        <Link to="/webDesign" className="row-span-2">
+          <div
+            className="h-64 rounded-lg bg-no-repeat bg-cover bg-bottom lg:h-full cursor-pointer overflow-hidden"
+            style={{
+              backgroundImage: `url('${WebDesignImg}')`,
+            }}
+          >
+            <div className="flex flex-col items-center justify-center h-full w-full hover:bg-peach hover:opacity-80">
+              <h3 className="text-2xl lg:text-4xl lg:mb-4 text-white ">
+                WEB DESIGN
+              </h3>
+              <div className="flex items-center">
+                <p className="text-white text-sm lg:text-xs leading-9 tracking-[0.5rem]">
+                  VIEW PROJECTS
+                </p>
+                <img src={RightArrow} alt="Right arrow" className="h-2 ml-2" />
+              </div>
+            </div>
           </div>
-        </div>
-        <div
-          className="h-64 rounded-lg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center cursor-pointer overflow-hidden"
-          style={{
-            backgroundImage: `url('${AppDesingImg}')`,
-          }}
-        >
-          <div className="flex flex-col items-center justify-center h-full w-full hover:bg-peach hover:opacity-80">
-            <h3 className="text-2xl lg:text-4xl lg:mb-4 text-white">
-              APP DESIGN
-            </h3>
-            <p className="text-white text-sm leading-9 tracking-[0.5rem]">
-              VIEW PROJECTS
-            </p>
+        </Link>
+
+        {/*App Design Card */}
+        <Link to="/appDesign">
+          <div
+            className="h-64 rounded-lg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center cursor-pointer overflow-hidden"
+            style={{
+              backgroundImage: `url('${AppDesingImg}')`,
+            }}
+          >
+            <div className="flex flex-col items-center justify-center h-full w-full hover:bg-peach hover:opacity-80">
+              <h3 className="text-2xl lg:text-4xl lg:mb-4 text-white">
+                APP DESIGN
+              </h3>
+              <div className="flex items-center">
+                <p className="text-white text-sm leading-9 tracking-[0.5rem]">
+                  VIEW PROJECTS
+                </p>
+                <img src={RightArrow} alt="Right arrow" className="h-2 ml-2" />
+              </div>
+            </div>
           </div>
-        </div>
-        <div
-          className="h-64 rounded-lg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center cursor-pointer overflow-hidden"
-          style={{
-            backgroundImage: `url('${GraphicDesignImg}')`,
-          }}
-        >
-          <div className="flex flex-col items-center justify-center h-full w-full hover:bg-peach hover:opacity-80">
-            <h3 className="text-2xl lg:text-4xl lg:mb-4 text-white">
-              GRAPHIC DESIGN
-            </h3>
-            <p className="text-white text-sm leading-9 tracking-[0.5rem]">
-              VIEW PROJECTS
-            </p>
+        </Link>
+
+        {/*Graphic Design Card */}
+        <Link to="/graphicDesign">
+          <div
+            className="h-64 rounded-lg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center cursor-pointer overflow-hidden"
+            style={{
+              backgroundImage: `url('${GraphicDesignImg}')`,
+            }}
+          >
+            <div className="flex flex-col items-center justify-center h-full w-full hover:bg-peach hover:opacity-80">
+              <h3 className="text-2xl lg:text-4xl lg:mb-4 text-white">
+                GRAPHIC DESIGN
+              </h3>
+              <div className="flex items-center">
+                <p className="text-white text-sm leading-9 tracking-[0.5rem]">
+                  VIEW PROJECTS
+                </p>
+                <img src={RightArrow} alt="Right arrow" className="h-2 ml-2" />
+              </div>
+            </div>
           </div>
-        </div>
+        </Link>
+
       </section>
     </div>
   );
