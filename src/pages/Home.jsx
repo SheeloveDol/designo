@@ -4,7 +4,7 @@ import BgPattern from "../assets/home/desktop/bg-pattern-hero-home.svg";
 export const Home = () => {
   return (
     <div
-      className={`relative bg-peach text-white text-center `}
+      className={`relative bg-peach text-white text-center sm:rounded-xl`}
       style={{
         backgroundImage: `url('${BgPattern}')`,
         backgroundRepeat: "no-repeat",
@@ -12,12 +12,12 @@ export const Home = () => {
         backgroundSize: "",
       }}
     >
-      <div className="lg:flex mx-4 lg:px-16">
-        <div className="lg:text-left lg:mt-20 md:mx-16 md:pt-8 ">
-          <h2 className="text-3xl md:text-4xl  pt-16 border">
+      <div className="lg:flex mx-4 lg:mx-0 lg:pl-20 ">
+        <div className="lg:text-left px-5 sm:px-20 lg:px-0 md:pt-8">
+          <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl pt-16 ">
             Award-winning custom designs and digital branding solutions
           </h2>
-          <p className="mt-10 text-sm text-center lg:text-left  ">
+          <p className="mt-10 text-sm sm:text-base text-center lg:text-left  ">
             With over 10 years in the industry, we are experienced in creating
             fully responsive websites, app design, and engaging brand experiences.
             Find out more about our services.
@@ -27,19 +27,18 @@ export const Home = () => {
           </button>
         </div>
         <div
-          className="overflow-hidden h-[448px] border lg:h-[600px] px-auto w-full bg-[center_top_-5rem]  lg:bg-top"
-          style={{
-            backgroundImage: `url('${HeroImage}')`,
-            
-          }}
+          className=" "
          
         >
-           {/* <img 
-            src={HeroImage} alt="picture of a cellular phone " 
-            className='  max-w-[500px] border '
-          />  */}
-          
-          </div>
+          <div
+            className="overflow-hidden max-w-[375px] h-[448px] lg:h-[548px] lg:w-96 bg-no-repeat bg-[center_top] lg:bg-[center_top_-3rem] mt-[-5rem] lg:mt-0 mx-auto"
+            style={{
+              backgroundImage: `url('${HeroImage}')`,
+              backgroundSize: "140%",
+              
+            }}
+          ></div>
+        </div>
       </div>
       <div></div>
       <div></div>
