@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import HeroImage from "../assets/home/desktop/image-hero-phone.png";
 import BgPattern from "../assets/home/desktop/bg-pattern-hero-home.svg";
 import AppDesingImg from "../assets/home/desktop/image-app-design.jpg";
