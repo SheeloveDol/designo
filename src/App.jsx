@@ -9,7 +9,7 @@ import { Locations } from "./pages/Locations";
 import { Contact } from "./pages/Contact";
 import { Navbar } from "./components/Navbar";
 import { MobileMenuModal } from "./components/MobileMenuModal";
-import { Footer } from "./components/Footer"
+import { Footer } from "./components/Footer";
 
 function App() {
   const [open, setOpen] = useState(false);
