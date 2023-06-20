@@ -20,7 +20,6 @@ function App() {
 
   return (
     <div className="bg-white ">
-      <div className="sm:mx-10 lg:mx-16">
         <Navbar open={open} handleOpen={handleOpen} />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -33,7 +32,6 @@ function App() {
         </Routes>
         <MobileMenuModal open={open} />
         <Footer />
-      </div>
     </div>
   );
 }
