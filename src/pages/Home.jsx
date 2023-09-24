@@ -5,11 +5,11 @@ import AppDesingImg from "../assets/home/desktop/image-app-design.jpg";
 import WebDesignImg from "../assets/home/desktop/image-web-design-large.jpg";
 import GraphicDesignImg from "../assets/home/desktop/image-graphic-design.jpg";
 import { Link } from "react-router-dom";
-import RightArrow from "../assets/shared/desktop/icon-right-arrow.svg";
 import PassionateImg from "../assets/home/desktop/illustration-passionate.svg";
 import ResourcefulImg from "../assets/home/desktop/illustration-resourceful.svg";
 import FriendlyImg from "../assets/home/desktop/illustration-friendly.svg";
 import SmallCircle from "../assets/shared/desktop/bg-pattern-small-circle.svg";
+import { ProjectsCard } from "../components/ProjectsCard";
 
 export const Home = () => {
   return (
@@ -59,80 +59,17 @@ export const Home = () => {
         <section className="mt-32 mx-6 sm:mx-0 gap-6 grid  lg:grid-cols-2 ">
           {/*Web Design card */}
           <Link to="/webDesign" className="row-span-2">
-            <div
-              className="h-64 rounded-lg bg-no-repeat bg-cover bg-bottom lg:h-full cursor-pointer overflow-hidden"
-              style={{
-                backgroundImage: `url('${WebDesignImg}')`,
-              }}
-            >
-              <div className="flex flex-col items-center justify-center h-full w-full hover:bg-lightPeach hover:opacity-80">
-                <h3 className="text-2xl sm:text-4xl lg:mb-4 text-white tracking-[0.2rem]">
-                  WEB DESIGN
-                </h3>
-                <div className="flex items-center">
-                  <p className="text-white text-xs lg:text-xs leading-9 tracking-[0.5rem]">
-                    VIEW PROJECTS
-                  </p>
-                  <img
-                    src={RightArrow}
-                    alt="Right arrow"
-                    className="h-2 ml-2"
-                  />
-                </div>
-              </div>
-            </div>
+            <ProjectsCard props={WebDesignImg} />
           </Link>
 
           {/*App Design Card */}
           <Link to="/appDesign">
-            <div
-              className="h-64 rounded-lg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center cursor-pointer overflow-hidden"
-              style={{
-                backgroundImage: `url('${AppDesingImg}')`,
-              }}
-            >
-              <div className="flex flex-col items-center justify-center h-full w-full hover:bg-lightPeach hover:opacity-80">
-                <h3 className="text-2xl sm:text-4xl lg:mb-4 text-white tracking-[0.2rem]">
-                  APP DESIGN
-                </h3>
-                <div className="flex items-center">
-                  <p className="text-white text-xs leading-9 tracking-[0.5rem]">
-                    VIEW PROJECTS
-                  </p>
-                  <img
-                    src={RightArrow}
-                    alt="Right arrow"
-                    className="h-2 ml-2"
-                  />
-                </div>
-              </div>
-            </div>
+            <ProjectsCard props={AppDesingImg} />
           </Link>
 
           {/*Graphic Design Card */}
           <Link to="/graphicDesign">
-            <div
-              className="h-64 rounded-lg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center cursor-pointer overflow-hidden"
-              style={{
-                backgroundImage: `url('${GraphicDesignImg}')`,
-              }}
-            >
-              <div className="flex flex-col items-center justify-center h-full w-full hover:bg-lightPeach hover:opacity-80">
-                <h3 className="text-2xl sm:text-4xl lg:mb-4 text-white tracking-[0.2rem]">
-                  GRAPHIC DESIGN
-                </h3>
-                <div className="flex items-center">
-                  <p className="text-white text-xs leading-9 tracking-[0.5rem]">
-                    VIEW PROJECTS
-                  </p>
-                  <img
-                    src={RightArrow}
-                    alt="Right arrow"
-                    className="h-2 ml-2"
-                  />
-                </div>
-              </div>
-            </div>
+            <ProjectsCard props={GraphicDesignImg} />
           </Link>
         </section>
 
