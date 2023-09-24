@@ -8,7 +8,7 @@ import Instagram from "../assets/shared/desktop/icon-instagram.svg"
 
 export const Footer = () => {
   return (
-    <footer className="bg-black mt-20 border ">
+    <footer className="bg-black mt-20 pb-20 border ">
       <div className="sm:mx-10 lg:mx-16  flex flex-col items-center just gap-10">
         <div className="flex flex-col sm:flex-row items-center w-[95%] sm:w-full sm:justify-between divide-y-[0.2px] sm:divide-y-0 sm:border-b sm:pb-5">
           <div className=" mt-10">

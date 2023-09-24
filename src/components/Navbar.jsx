@@ -9,7 +9,7 @@ export const Navbar = ({ open, handleOpen}) => {
 
     
   return (
-    <div>
+    <div className='sm:mx-10 lg:mx-16'>
         <div className=" flex justify-between px-4 py-6 bg-white">
             <header className='flex items-center w-52'>
                 <Link to="/">

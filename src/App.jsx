@@ -19,9 +19,10 @@ function App() {
   };
 
   return (
-    <div className="bg-white ">
+    <div className="bg-white border-2 border-red-500">
         <Navbar open={open} handleOpen={handleOpen} />
         <Routes>
+        
           <Route path="/" element={<Home />} />
           <Route path="/webDesign" element={<WebDesign />} />
           <Route path="/appDesign" element={<AppDesign />} />
