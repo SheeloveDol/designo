@@ -25,12 +25,12 @@ export const Home = () => {
             backgroundSize: "",
           }}
         >
-          <div className="lg:flex mx-4 lg:mx-0 lg:pl-20 ">
-            <div className="lg:text-left px-5 sm:px-20 lg:px-0 md:pt-8">
-              <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl pt-16 leading-10">
+          <div className="lg:flex mx-4 lg:mx-0 lg:pl-20xnxx">
+            <div className="lg:text-left px-5 sm:px-20 lg:px-0 md:pt-8 lg:pl-20 lg:pr-28 ">
+              <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl pt-16  leading-10">
                 Award-winning custom designs and digital branding solutions
               </h2>
-              <p className="mt-10 text-sm sm:text-base text-center lg:text-left leading-7 ">
+              <p className="mt-10 text-sm sm:text-base text-center lg:text-left leading-7">
                 With over 10 years in the industry, we are experienced in
                 creating fully responsive websites, app design, and engaging
                 brand experiences. Find out more about our services.
