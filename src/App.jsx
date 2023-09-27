@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <div className="bg-white border-2 border-red-500">
+    <div className="bg-white max-w-[1492px] mx-auto">
         <Navbar open={open} handleOpen={handleOpen} />
         <Routes>
         
