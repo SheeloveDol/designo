@@ -56,7 +56,7 @@ export const Home = () => {
 
         {/* -----------PROJECTS SECTION ------------*/}
 
-        <section className="mt-32 mx-6 sm:mx-0 gap-6 grid  lg:grid-cols-2 ">
+        <section className="mt-32 lg:h-96 mx-6 sm:mx-0 gap-6 grid  lg:grid-cols-2 ">
           {/*Web Design card */}
           <Link to="/webDesign" className="row-span-2">
             <ProjectsCard props={WebDesignImg} />
@@ -75,7 +75,7 @@ export const Home = () => {
 
         {/*----------CORE VALUES SECTION----------- */}
 
-        <section className="mt-32 mx-6 flex flex-col lg:flex-row gap-20 justify-center items-center">
+        <section className="mt-32 mx-6 lg:mx-0 flex flex-col lg:flex-row gap-20 justify-center items-center">
           <div className="flex flex-col sm:flex-row lg:flex-col sm:gap-6 items-center justify-center">
             <div
               style={{ backgroundImage: `url('${SmallCircle}')` }}
