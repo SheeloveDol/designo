@@ -7,6 +7,7 @@ import Youtube from "../assets/shared/desktop/icon-youtube.svg";
 import Twitter from "../assets/shared/desktop/icon-twitter.svg";
 import Pinterest from "../assets/shared/desktop/icon-pinterest.svg";
 import Instagram from "../assets/shared/desktop/icon-instagram.svg";
+import CtaBackgroundImg from "../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg"
 
 export const Footer = () => {
   const location = useLocation();
@@ -33,7 +34,14 @@ export const Footer = () => {
     >
       <div className="bg-white py-16 pt-28 sm:pt-44 relative"></div>
 
-      <div className="text-center text-white py-8 lg:py-16 px-4  absolute top-3 w-[90%] left-[5%] bg-peach rounded-lg z-10 lg:flex justify-between lg:px-16 lg:text-left">
+      <div className="text-center text-white py-8 lg:py-16 px-4  absolute top-3 w-[90%] left-[5%] bg-peach rounded-lg z-10 lg:flex justify-between lg:px-16 lg:text-left"
+      style={{
+        backgroundImage: `url('${CtaBackgroundImg}')`,
+        
+        backgroundPosition: "center"
+      }}
+      
+      >
         <div className="sm:mx-auto lg:mx-0 sm:w-3/4 lg:w-1/2">
           <h3 className="mb-6 text-2xl">
             Let's talk about<br></br> your project
