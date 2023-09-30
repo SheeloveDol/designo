@@ -19,19 +19,19 @@ export const Home = () => {
       title: "WEB DESIGN",
       backgroundImg: `${WebDesignImg}`,
       linkTo: '"/webDesign"',
-      className: 'row-span-2"',
+      className: 'row-span-2',
     },
     {
       title: "APP DESIGN",
       backgroundImg: `${AppDesignImg}`,
       linkTo: '/"appDesign"',
-      className: '""',
+      className: "",
     },
     {
       title: "GRAPHIC DESIGN",
       backgroundImg: `${GraphicDesignImg}`,
       linkTo: '"/graphicDesign"',
-      className: '""',
+      className: "",
     },
   ];
 
