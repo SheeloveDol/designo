@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import CtaBackgroundImg from "../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg"
+import { Link } from "react-router-dom";
+import CtaBackgroundImg from "../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg";
 
 export const CallToAction = () => {
   return (
@@ -21,8 +22,9 @@ export const CallToAction = () => {
             how our expertise can help your business grow.
           </p>
         </div>
+
         <button className="text-black bg-lightGrey p-4 rounded-lg lg:flex-none h-14 self-center hover:bg-lightPeach hover:text-white">
-          GET IN TOUCH
+          <Link to="/contact">GET IN TOUCH</Link>
         </button>
       </div>
     </div>
