@@ -14,8 +14,9 @@ export const Footer = () => {
 
   const pathStyles = {
     "/contact": {
-      backgroundColor: "red",
-      paddingTop: "8rem",
+    
+      marginTop: "4rem",
+      paddingTop: "1rem",
     },
   };
 
@@ -23,21 +24,22 @@ export const Footer = () => {
 
   const style = pathStyles[currentPath] || {};
 
-  //TODO: Continue to figure out how to conditionally render the CONTACT component. On the right path
-  //TODO: Keep everything in the footer?
-  //TODO: Footer needs to be have 3 main boxes? Top is white, bottome black and middle peach.
+  //TODO: must come back to conditionally resize footer once contact page is done.
 
   return (
     <footer
       style={{ ...style }}
       className="bg-black border-none mt-20 pb-20 relative"
     >
-      <div className="bg-white py-16 pt-28 sm:pt-44 relative"></div>
-
-      <CallToAction />
+      {currentPath != '/contact' && <div className="bg-white py-16 pt-28 sm:pt-44 relative"></div> }
+      
 
       <div>
-        <div className="sm:mx-10 lg:mx-16 pt-36 sm:pt-20  flex flex-col items-center just gap-10">
+        {currentPath != '/contact' && <CallToAction />}
+      </div>
+
+      <div>
+        <div className="sm:mx-10 lg:mx-16 pt-36 sm:pt-20 flex flex-col items-center just gap-10">
           <div className="flex flex-col sm:flex-row items-center w-[95%] sm:w-full sm:justify-between divide-y-[0.2px] sm:divide-y-0 sm:border-b sm:pb-5">
             <div className=" mt-10">
               <img src={FooterLogo} alt="Footer logo" className="w-56" />
