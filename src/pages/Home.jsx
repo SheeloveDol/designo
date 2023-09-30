@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import HeroImage from "../assets/home/desktop/image-hero-phone.png";
 import BgPattern from "../assets/home/desktop/bg-pattern-hero-home.svg";
-import AppDesingImg from "../assets/home/desktop/image-app-design.jpg";
+import AppDesignImg from "../assets/home/desktop/image-app-design.jpg";
 import WebDesignImg from "../assets/home/desktop/image-web-design-large.jpg";
 import GraphicDesignImg from "../assets/home/desktop/image-graphic-design.jpg";
 import { Link } from "react-router-dom";
@@ -12,6 +12,14 @@ import SmallCircle from "../assets/shared/desktop/bg-pattern-small-circle.svg";
 import { ProjectsCard } from "../components/ProjectsCard";
 
 export const Home = () => {
+
+  // For the project cards
+  const projects = [
+    {title: 'WEB DESIGN', backgroundImg: `${WebDesignImg}`, linkTo: '"/webDesign"', className: 'row-span-2"' },
+    {title: 'APP DESIGN', backgroundImg: `${AppDesignImg}`, linkTo: '/"appDesign"', className: '""'},
+    {title: 'GRAPHIC DESIGN', backgroundImg: `${GraphicDesignImg}`, linkTo: '"/graphicDesign"', className: '""'},
+  ]
+
   return (
     <div className="sm:mx-10 lg:mx-16 ">
       <div>
@@ -58,19 +66,13 @@ export const Home = () => {
 
         <section className="mt-32 lg:h-96 mx-6 sm:mx-0 gap-6 grid  lg:grid-cols-2 ">
           {/*Web Design card */}
-          <Link to="/webDesign" className="row-span-2">
-            <ProjectsCard props={WebDesignImg} />
-          </Link>
-
-          {/*App Design Card */}
-          <Link to="/appDesign">
-            <ProjectsCard props={AppDesingImg} />
-          </Link>
-
-          {/*Graphic Design Card */}
-          <Link to="/graphicDesign">
-            <ProjectsCard props={GraphicDesignImg} />
-          </Link>
+          {
+            projects.map((item, index) => 
+              <Link key={index} to={item.linkTo} className={item.className}>
+                <ProjectsCard backgroundImg={item.backgroundImg} title={item.title}/>
+              </Link>
+            )
+          }
         </section>
 
         {/*----------CORE VALUES SECTION----------- */}
