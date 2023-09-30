@@ -14,7 +14,6 @@ export const Footer = () => {
 
   const pathStyles = {
     "/contact": {
-    
       marginTop: "4rem",
       paddingTop: "1rem",
     },
@@ -31,18 +30,19 @@ export const Footer = () => {
       style={{ ...style }}
       className="bg-black border-none mt-20 pb-20 relative"
     >
-      {currentPath != '/contact' && <div className="bg-white py-16 pt-28 sm:pt-44 relative"></div> }
-      
+      {currentPath != "/contact" && (
+        <div className="bg-white py-16 pt-28 sm:pt-44 relative"></div>
+      )}
 
-      <div>
-        {currentPath != '/contact' && <CallToAction />}
-      </div>
+      <div>{currentPath != "/contact" && <CallToAction />}</div>
 
       <div>
         <div className="sm:mx-10 lg:mx-16 pt-36 sm:pt-20 flex flex-col items-center just gap-10">
           <div className="flex flex-col sm:flex-row items-center w-[95%] sm:w-full sm:justify-between divide-y-[0.2px] sm:divide-y-0 sm:border-b sm:pb-5">
             <div className=" mt-10">
-              <img src={FooterLogo} alt="Footer logo" className="w-56" />
+              <Link to="/">
+                <img src={FooterLogo} alt="Footer logo" className="w-56" />
+              </Link>
             </div>
             <nav className="mt-8 pt-8 sm:w-3/5 md:w-1/2 lg:w-2/5 w-full">
               <ul className="sm:flex sm:justify-between text-white ">

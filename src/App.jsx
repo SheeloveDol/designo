@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { WebDesign } from "./pages/WebDesign";
+import  { WebDesign }  from "./pages/WebDesign";
 import { AppDesign } from "./pages/AppDesign";
 import { GraphicDesign } from "./pages/GraphicDesign";
 import { About } from "./pages/About";

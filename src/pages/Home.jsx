@@ -18,19 +18,19 @@ export const Home = () => {
     {
       title: "WEB DESIGN",
       backgroundImg: `${WebDesignImg}`,
-      linkTo: '"/webDesign"',
+      linkTo: "/webDesign",
       className: 'row-span-2',
     },
     {
       title: "APP DESIGN",
       backgroundImg: `${AppDesignImg}`,
-      linkTo: '/"appDesign"',
+      linkTo: '/appDesign',
       className: "",
     },
     {
       title: "GRAPHIC DESIGN",
       backgroundImg: `${GraphicDesignImg}`,
-      linkTo: '"/graphicDesign"',
+      linkTo: "/graphicDesign",
       className: "",
     },
   ];
@@ -67,7 +67,7 @@ export const Home = () => {
   ];
 
   return (
-    <div className="sm:mx-10 lg:mx-16 ">
+    <div className="sm:mx-10 lg:mx-16 border border-6 border-peach">
       <div>
         {/* HERO SECTION */}
         <section
