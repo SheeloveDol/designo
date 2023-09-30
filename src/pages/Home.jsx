@@ -13,12 +13,40 @@ import { ProjectsCard } from "../components/ProjectsCard";
 
 export const Home = () => {
 
-  // For the project cards
+  // For project cards array
   const projects = [
     {title: 'WEB DESIGN', backgroundImg: `${WebDesignImg}`, linkTo: '"/webDesign"', className: 'row-span-2"' },
     {title: 'APP DESIGN', backgroundImg: `${AppDesignImg}`, linkTo: '/"appDesign"', className: '""'},
     {title: 'GRAPHIC DESIGN', backgroundImg: `${GraphicDesignImg}`, linkTo: '"/graphicDesign"', className: '""'},
-  ]
+  ];
+
+  // Core Values array
+  const coreValues = [
+    {
+      title: 'PASSIONATE',
+      statement: 'Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.',
+      backgroundImage: `${SmallCircle}`,
+      image: `${PassionateImg}`,
+      bgImgRotation: '',
+      transform: ""
+    },
+    {
+      title: 'RESOURCEFUL',
+      statement: 'Everything we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients\' needs.',
+      backgroundImage: `${SmallCircle}`,
+      image: `${ResourcefulImg}`,
+      bgImgRotation: "-rotate-180",
+      transform: "rotate(180deg)"
+    },
+    {
+      title: 'FRIENDLY',
+      statement: 'We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.',
+      backgroundImage: `${SmallCircle}`,
+      image: `${FriendlyImg}`,
+      bgImgRotation: "-rotate-90",
+      transform: "rotate(90deg)"
+    },
+  ];
 
   return (
     <div className="sm:mx-10 lg:mx-16 ">
@@ -78,70 +106,34 @@ export const Home = () => {
         {/*----------CORE VALUES SECTION----------- */}
 
         <section className="mt-32 mx-6 lg:mx-0 flex flex-col lg:flex-row gap-20 justify-center items-center">
-          <div className="flex flex-col sm:flex-row lg:flex-col sm:gap-6 items-center justify-center">
-            <div
-              style={{ backgroundImage: `url('${SmallCircle}')` }}
-              className="bg-no-repeat inline-block min-w-[202px] h-[202px]"
-            >
-              <img src={PassionateImg} className="" />
-            </div>
-            <div className="text-center sm:text-left lg:text-center">
-              <h3 className="text-3xl text-black py-10 sm:py-4 tracking-[0.4rem]">
-                PASSIONATE
-              </h3>
-              <p className="text-black leading-6">
-                Each project starts with an in-depth brand research to ensure we
-                only create products that serve a purpose. We merge art, design,
-                and technology into exciting new solutions.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col sm:flex-row lg:flex-col sm:gap-6 items-center justify-center">
-            <div
-              style={{
-                backgroundImage: `url('${SmallCircle}')`,
-                transform: "rotate(180deg)",
+        {
+          coreValues.map((item, index) =>
+          
+            <div key={index} className="flex flex-col sm:flex-row lg:flex-col sm:gap-6 items-center justify-center">
+              <div
+                style={{ backgroundImage: `url('${item.backgroundImage}')`,
+                transform: `${item.transform} `
               }}
-              className="bg-no-repeat inline-block min-w-[202px] h-[202px]"
-            >
-              <img src={ResourcefulImg} className="-rotate-180" />
-            </div>
-            <div className="text-center sm:text-left lg:text-center">
-              <h3 className="text-3xl text-black py-10 sm:py-4 tracking-[0.4rem]">
-                RESOURCEFUL
-              </h3>
-              <p className="text-black leading-6">
-                Everything that we do has a strategic purpose. We use an agile
-                approach in all of our projects and value customer
-                collaboration. It guarantees a superior results that fulfill our
-                clients' needs.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col sm:flex-row lg:flex-col sm:gap-6 items-center justify-center">
-            <div
-              style={{
-                backgroundImage: `url('${SmallCircle}')`,
-                transform: "rotate(90deg)",
-              }}
-              className="bg-no-repeat inline-block min-w-[202px] h-[202px]"
-            >
-              <img src={FriendlyImg} className="-rotate-90" />
-            </div>
-            <div className="text-center sm:text-left lg:text-center">
-              <h3 className="text-3xl text-black py-10 sm:py-4 tracking-[0.4rem]">
-                FRIENDLY
-              </h3>
-              <p className="text-black leading-6">
-                We are a group of enthusiatic folks who know how to put people
-                first. our success depends on our customers, and we strive to
-                give them the best experience a company can provide.
-              </p>
-            </div>
-          </div>
+                className="bg-no-repeat inline-block min-w-[202px] h-[202px]"
+              >
+                <img src={item.image} className={item.bgImgRotation} />
+              </div>
+              <div className="text-center sm:text-left lg:text-center">
+                <h3 className="text-3xl text-black py-10 sm:py-4 tracking-[0.4rem]">
+                  {item.title}
+                </h3>
+                <p className="text-black leading-6">
+                  {item.statement}
+                </p>
+              </div>
+            </div> 
+        
+          )
+        }
         </section>
+
+
+        
       </div>
     </div>
   );
