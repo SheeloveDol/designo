@@ -10,41 +10,59 @@ import ResourcefulImg from "../assets/home/desktop/illustration-resourceful.svg"
 import FriendlyImg from "../assets/home/desktop/illustration-friendly.svg";
 import SmallCircle from "../assets/shared/desktop/bg-pattern-small-circle.svg";
 import { ProjectsCard } from "../components/ProjectsCard";
+import { CoreValuesCard } from "../components/CoreValuesCard";
 
 export const Home = () => {
-
   // For project cards array
   const projects = [
-    {title: 'WEB DESIGN', backgroundImg: `${WebDesignImg}`, linkTo: '"/webDesign"', className: 'row-span-2"' },
-    {title: 'APP DESIGN', backgroundImg: `${AppDesignImg}`, linkTo: '/"appDesign"', className: '""'},
-    {title: 'GRAPHIC DESIGN', backgroundImg: `${GraphicDesignImg}`, linkTo: '"/graphicDesign"', className: '""'},
+    {
+      title: "WEB DESIGN",
+      backgroundImg: `${WebDesignImg}`,
+      linkTo: '"/webDesign"',
+      className: 'row-span-2"',
+    },
+    {
+      title: "APP DESIGN",
+      backgroundImg: `${AppDesignImg}`,
+      linkTo: '/"appDesign"',
+      className: '""',
+    },
+    {
+      title: "GRAPHIC DESIGN",
+      backgroundImg: `${GraphicDesignImg}`,
+      linkTo: '"/graphicDesign"',
+      className: '""',
+    },
   ];
 
   // Core Values array
   const coreValues = [
     {
-      title: 'PASSIONATE',
-      statement: 'Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.',
+      title: "PASSIONATE",
+      statement:
+        "Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.",
       backgroundImage: `${SmallCircle}`,
       image: `${PassionateImg}`,
-      bgImgRotation: '',
-      transform: ""
+      bgImgRotation: "",
+      transform: "",
     },
     {
-      title: 'RESOURCEFUL',
-      statement: 'Everything we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients\' needs.',
+      title: "RESOURCEFUL",
+      statement:
+        "Everything we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients' needs.",
       backgroundImage: `${SmallCircle}`,
       image: `${ResourcefulImg}`,
       bgImgRotation: "-rotate-180",
-      transform: "rotate(180deg)"
+      transform: "rotate(180deg)",
     },
     {
-      title: 'FRIENDLY',
-      statement: 'We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.',
+      title: "FRIENDLY",
+      statement:
+        "We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.",
       backgroundImage: `${SmallCircle}`,
       image: `${FriendlyImg}`,
       bgImgRotation: "-rotate-90",
-      transform: "rotate(90deg)"
+      transform: "rotate(90deg)",
     },
   ];
 
@@ -94,46 +112,31 @@ export const Home = () => {
 
         <section className="mt-32 lg:h-96 mx-6 sm:mx-0 gap-6 grid  lg:grid-cols-2 ">
           {/*Web Design card */}
-          {
-            projects.map((item, index) => 
-              <Link key={index} to={item.linkTo} className={item.className}>
-                <ProjectsCard backgroundImg={item.backgroundImg} title={item.title}/>
-              </Link>
-            )
-          }
+          {projects.map((item, index) => (
+            <Link key={index} to={item.linkTo} className={item.className}>
+              <ProjectsCard
+                backgroundImg={item.backgroundImg}
+                title={item.title}
+              />
+            </Link>
+          ))}
         </section>
 
         {/*----------CORE VALUES SECTION----------- */}
 
         <section className="mt-32 mx-6 lg:mx-0 flex flex-col lg:flex-row gap-20 justify-center items-center">
-        {
-          coreValues.map((item, index) =>
-          
-            <div key={index} className="flex flex-col sm:flex-row lg:flex-col sm:gap-6 items-center justify-center">
-              <div
-                style={{ backgroundImage: `url('${item.backgroundImage}')`,
-                transform: `${item.transform} `
-              }}
-                className="bg-no-repeat inline-block min-w-[202px] h-[202px]"
-              >
-                <img src={item.image} className={item.bgImgRotation} />
-              </div>
-              <div className="text-center sm:text-left lg:text-center">
-                <h3 className="text-3xl text-black py-10 sm:py-4 tracking-[0.4rem]">
-                  {item.title}
-                </h3>
-                <p className="text-black leading-6">
-                  {item.statement}
-                </p>
-              </div>
-            </div> 
-        
-          )
-        }
+          {coreValues.map((item, index) => (
+            <CoreValuesCard
+              key={index}
+              title={item.title}
+              statement={item.statement}
+              image={item.image}
+              backgroundImage={item.backgroundImage}
+              bgImgRotation={item.bgImgRotation}
+              transform={item.transform}
+            />
+          ))}
         </section>
-
-
-        
       </div>
     </div>
   );

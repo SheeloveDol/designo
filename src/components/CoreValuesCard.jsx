@@ -27,3 +27,4 @@ export const CoreValuesCard = ({ title, statement, image, backgroundImage, bgImg
 }
 
 
+
