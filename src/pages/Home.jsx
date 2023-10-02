@@ -9,7 +9,7 @@ import PassionateImg from "../assets/home/desktop/illustration-passionate.svg";
 import ResourcefulImg from "../assets/home/desktop/illustration-resourceful.svg";
 import FriendlyImg from "../assets/home/desktop/illustration-friendly.svg";
 import SmallCircle from "../assets/shared/desktop/bg-pattern-small-circle.svg";
-import { ProjectsCard } from "../components/ProjectsCard";
+import { ProjectsCard } from "../components/BranchCards";
 import { CoreValuesCard } from "../components/CoreValuesCard";
 
 export const Home = () => {
