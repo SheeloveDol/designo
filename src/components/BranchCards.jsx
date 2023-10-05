@@ -1,7 +1,7 @@
 import RightArrow from "../assets/shared/desktop/icon-right-arrow.svg";
 
 // eslint-disable-next-line react/prop-types
-export const ProjectsCard = ({ backgroundImg, title }) => {
+export const BranchCards = ({ backgroundImg, title }) => {
   return (
     <div
       className="h-64 rounded-lg bg-no-repeat bg-cover bg-bottom lg:h-full cursor-pointer overflow-hidden"

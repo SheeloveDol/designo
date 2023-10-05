@@ -5,8 +5,27 @@ import builderImg from "../assets/web-design/desktop/image-builder.jpg"
 import blogrImg from "../assets/web-design/desktop/image-blogr.jpg"
 import campImg from "../assets/web-design/desktop/image-camp.jpg"
 import { ProjectsCard } from "../components/ProjectsCard"
-
+import { BranchCards } from "../components/BranchCards"
+import HeaderBgImg from "../assets/shared/desktop/bg-pattern-call-to-action.svg"
+import GraphicDesignImg from "../assets/home/desktop/image-graphic-design.jpg";
+import AppDesignImg from "../assets/home/desktop/image-app-design.jpg";
+import { Link } from "react-router-dom"
 export const WebDesign = () => {
+
+    const projects = [
+        {
+          title: "APP DESIGN",
+          backgroundImg: `${AppDesignImg}`,
+          linkTo: '/appDesign',
+          className: "",
+        },
+        {
+          title: "GRAPHIC DESIGN",
+          backgroundImg: `${GraphicDesignImg}`,
+          linkTo: "/graphicDesign",
+          className: "",
+        },
+      ];
 
     const webDesignData = [
         {
@@ -44,7 +63,13 @@ export const WebDesign = () => {
 
   return (
     <div className="sm:mx-10 lg:mx-16 ">
-      <section className="bg-peach rounded-lg text-white text-center">
+      <section 
+        className="bg-peach rounded-lg text-white text-center"
+        style={{
+            backgroundImage: `url('${HeaderBgImg}')`,
+            backgroundPosition: 'center'
+        }}
+      >
         <div className="px-4 w-9/10 sm:w-4/5 md:w-3/5 lg:w-1/2 mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl pt-16 pb-8">Web Design</h2>
             <p className="pb-16 w-9/10">We build websites that serve as powerful marketing tools and bring memorable brand experiences.</p>
@@ -56,6 +81,18 @@ export const WebDesign = () => {
         {
             webDesignData.map((item, index) => <ProjectsCard key={index} title={item.title} description={item.description} image={item.image}/>)
         }
+      </section>
+
+      {/* Branch Cards section */}
+      <section className="grid mt-32 gap-6 mx-6 lg:grid-cols-2 lg:h-64">
+      {projects.map((item, index) => (
+            <Link key={index} to={item.linkTo} className={item.className}>
+              <BranchCards
+                backgroundImg={item.backgroundImg}
+                title={item.title}
+              />
+            </Link>
+          ))}
       </section>
     </div>
   )

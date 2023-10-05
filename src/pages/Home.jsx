@@ -9,7 +9,7 @@ import PassionateImg from "../assets/home/desktop/illustration-passionate.svg";
 import ResourcefulImg from "../assets/home/desktop/illustration-resourceful.svg";
 import FriendlyImg from "../assets/home/desktop/illustration-friendly.svg";
 import SmallCircle from "../assets/shared/desktop/bg-pattern-small-circle.svg";
-import { ProjectsCard } from "../components/BranchCards";
+import { BranchCards } from "../components/BranchCards";
 import { CoreValuesCard } from "../components/CoreValuesCard";
 
 export const Home = () => {
@@ -114,7 +114,7 @@ export const Home = () => {
           {/*Web Design card */}
           {projects.map((item, index) => (
             <Link key={index} to={item.linkTo} className={item.className}>
-              <ProjectsCard
+              <BranchCards
                 backgroundImg={item.backgroundImg}
                 title={item.title}
               />
