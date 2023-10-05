@@ -84,7 +84,7 @@ export const WebDesign = () => {
       </section>
 
       {/* Branch Cards section */}
-      <section className="grid mt-32 gap-6 mx-6 lg:grid-cols-2 lg:h-64">
+      <section className="grid mt-32 gap-6 mx-6 sm:mx-0 lg:grid-cols-2 lg:h-64">
       {projects.map((item, index) => (
             <Link key={index} to={item.linkTo} className={item.className}>
               <BranchCards
