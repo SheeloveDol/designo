@@ -64,7 +64,7 @@ export const WebDesign = () => {
   return (
     <div className="sm:mx-10 lg:mx-16 ">
       <section 
-        className="bg-peach rounded-lg text-white text-center"
+        className="bg-peach sm:rounded-lg text-white text-center"
         style={{
             backgroundImage: `url('${HeaderBgImg}')`,
             backgroundPosition: 'center'
