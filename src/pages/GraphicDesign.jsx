@@ -26,17 +26,17 @@ export const GraphicDesign = () => {
   
   const graphicDesignData = [
       {
-          title: "EXPRESS",
+          title: "TIM BROWN",
           description: "A book cover designed for Tim Brown's new release, 'Change'",
           image: `${changeImg}`,
       },
       {
-          title: "TRANSFER", 
+          title: "BOXED WATER", 
           description: "A simple packaging concept made for Boxed Water",
           image: `${boxedWaterImg}`,
       },
       {
-          title: "PHOTON", 
+          title: "SCIENCE !", 
           description: "A poster made in collaboration with the Federal Art Project",
           image: `${scienceImg}`,
       },

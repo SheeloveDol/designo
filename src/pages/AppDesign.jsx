@@ -28,28 +28,28 @@ export const AppDesign = () => {
 
 const appDesignData = [
     {
-        title: "EXPRESS",
-        description: "A multi-carrier shipping website for ecommerce businesses",
+        title: "AIRFILTER",
+        description: "Solving the problem of pooor indor air quality by filtering the air",
         image: `${airFilterImg}`,
     },
     {
-        title: "TRANSFER", 
-        description: "Site for low-cost money transfers and sending money within seconds",
+        title: "EYECAM", 
+        description: "Product that lets you edit your favorite photos and videos at any time",
         image: `${eyeCamImg}`,
     },
     {
-        title: "PHOTON", 
-        description: "A state-of-the-art music player with high-resolution audio and DSP effects",
+        title: "FACEIT", 
+        description: "Get to meet your favorite internet superstar with the faceit app",
         image: `${faceItImg}`,
     },
     {
-        title: "BUILDER", 
-        description: "Connects users with local contractors based on their location",
+        title: "TODO", 
+        description: "A toto app that features cloud sync with light and dark mode",
         image: `${toDoImg}`,
     },
     {
-        title: "BLOGR", 
-        description: "Blogr is a platform for creating an online blog or publication",
+        title: "LOOPSTUDIOS", 
+        description: "A VR experience app made for Loopstudios",
         image: `${loopStudiosImg}`,
     },
 ]
