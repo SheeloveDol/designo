@@ -62,18 +62,3 @@ export const WebDesign = () => {
 }
 
 
-/*
-<div className="bg-[#FFEAE6] flex flex-col rounded-lg max-w-[350px]">
-            <div className="basis-2/3">
-                <img src={builderImg} />
-            </div>
-            <div className="basis-1/3 text-center w-3/5 mx-auto py-5">
-                <h4 className="text-peach pb-3">BUILDER</h4>
-                <p className="text-darkGrey">A multi-carrier shipping website for ecommerce businesses</p>
-            </div>
-        </div>
-
-
-
-        flex flex-col lg:flex-row lg:flex-wrap
-*/

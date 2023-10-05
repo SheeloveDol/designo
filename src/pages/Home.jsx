@@ -67,7 +67,7 @@ export const Home = () => {
   ];
 
   return (
-    <div className="sm:mx-10 lg:mx-16 border border-6 border-peach">
+    <div className="sm:mx-10 lg:mx-16">
       <div>
         {/* HERO SECTION */}
         <section
