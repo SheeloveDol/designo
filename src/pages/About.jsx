@@ -2,10 +2,34 @@
 import CanadaImg from "../assets/shared/desktop/illustration-canada.svg" 
 import AustraliaImg from "../assets/shared/desktop/illustration-australia.svg" 
 import UnitedKingdomImg from "../assets/shared/desktop/illustration-united-kingdom.svg" 
-
-import aboutHeroD from "../assets/about/desktop/image-about-hero.jpg"
+import { LocationCard } from "../components/LocationCard"
 
 export const About = () => {
+
+  const locationCardsData = [
+    {
+      'title': 'CANADA',
+      'image': `${CanadaImg}`,
+      'imageRotation': "-rotate-90",
+      'bgRotation': "rotate-90",
+      'bottomMargin': "mb-16",
+    },
+    {
+      'title': 'AUSTRALIA',
+      'image': `${AustraliaImg}`,
+      'imageRotation': "",
+      'bgRotation': "",
+      'bottomMargin': "mb-16",
+    },
+    {
+      'title': 'UNITED KINGDOM',
+      'image': `${UnitedKingdomImg}`,
+      'imageRotation': "rotate-90",
+      'bgRotation': "-rotate-90",
+      'bottomMargin': "",
+    },
+  ]
+
   return (
     <div className="sm:mx-10 lg:mx-16" >
       <section className="flex flex-col lg:flex-row">
@@ -32,7 +56,22 @@ export const About = () => {
         </div>
       </section>
 
-      <section className="flex flex-col lg:flex-row sm:mt-32">
+      <section className="pt-32 grid lg:grid-cols-3">
+        {
+          locationCardsData.map((item,  index) => 
+            <LocationCard 
+              key={index}
+              title={item.title} 
+              image={item.image}
+              imageRotation={item.imageRotation}
+              bgRotation={item.bgRotation}
+              bottomMargin={item.bottomMargin}
+            />
+            )
+        }
+      </section>
+
+      <section className="flex flex-col lg:flex-row mt-32">
         <div 
           className="bg-aboutRealDealMobile bg-cover sm:bg-aboutRealDealTablet lg:bg-aboutRealDealDesktop h-64 lg:h-auto sm:rounded-t-lg lg:rounded-r-lg lg:rounded-l-none lg:basis-2/5"
         ></div>

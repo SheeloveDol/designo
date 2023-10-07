@@ -18,6 +18,8 @@ export default {
 
     extend: {
       backgroundImage: {
+        'smallCircle': 'url("/src/assets/shared/desktop/bg-pattern-small-circle.svg ")',
+
         'aboutHeroMobile': 'url("/src/assets/about/mobile/image-about-hero.jpg")',
         'aboutHeroTablet': 'url("/src/assets/about/tablet/image-about-hero.jpg")',
         'aboutHeroDesktop': 'url("/src/assets/about/desktop/image-about-hero.jpg")',
@@ -25,10 +27,11 @@ export default {
         'aboutRealDealMobile': 'url("/src/assets/about/mobile/image-real-deal.jpg")',
         'aboutRealDealTablet': 'url("/src/assets/about/tablet/image-real-deal.jpg")',
         'aboutRealDealDesktop': 'url("/src/assets/about/desktop/image-real-deal.jpg")',
-        
+
         'aboutWorldClassMobile': 'url("/src/assets/about/mobile/image-world-class-talent.jpg")',
         'aboutWorldClassTablet': 'url("/src/assets/about/tablet/image-world-class-talent.jpg")',
         'aboutWorldClassDesktop': 'url("/src/assets/about/desktop/image-world-class-talent.jpg")',
+
       } 
     },
   },

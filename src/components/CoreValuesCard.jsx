@@ -22,7 +22,7 @@ export const CoreValuesCard = ({ title, statement, image, backgroundImage, bgImg
               </p>
             </div>
           </div>
-    </div>
+    </div> 
   )
 }
 
