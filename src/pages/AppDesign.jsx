@@ -1,3 +1,4 @@
+import ScrollToTop from "../components/ScrollToTop";
 import WebDesignImg from "../assets/home/desktop/image-web-design-large.jpg";
 import GraphicDesignImg from "../assets/home/desktop/image-graphic-design.jpg";
 import airFilterImg from "../assets/app-design/desktop/image-airfilter.jpg"
@@ -56,6 +57,7 @@ const appDesignData = [
 
 return (
 <div className="sm:mx-10 lg:mx-16 ">
+  <ScrollToTop />
   <section 
     className="bg-peach sm:rounded-lg text-white text-center"
     style={{

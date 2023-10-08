@@ -1,3 +1,4 @@
+import ScrollToTop from "../components/ScrollToTop"
 import expressImg from "../assets/web-design/desktop/image-express.jpg"
 import transerImg from "../assets/web-design/desktop/image-transfer.jpg"
 import photonImg from "../assets/web-design/desktop/image-photon.jpg"
@@ -63,6 +64,7 @@ export const WebDesign = () => {
 
   return (
     <div className="sm:mx-10 lg:mx-16 ">
+      <ScrollToTop />
       <section 
         className="bg-peach sm:rounded-lg text-white text-center"
         style={{

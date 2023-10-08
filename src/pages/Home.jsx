@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import ScrollToTop from "../components/ScrollToTop";
 import HeroImage from "../assets/home/desktop/image-hero-phone.png";
 import BgPattern from "../assets/home/desktop/bg-pattern-hero-home.svg";
 import AppDesignImg from "../assets/home/desktop/image-app-design.jpg";
@@ -68,6 +69,7 @@ export const Home = () => {
 
   return (
     <div className="sm:mx-10 lg:mx-16">
+      <ScrollToTop />
       <div>
         {/* HERO SECTION */}
         <section

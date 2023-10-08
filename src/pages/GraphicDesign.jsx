@@ -1,3 +1,4 @@
+import ScrollToTop from "../components/ScrollToTop";
 import WebDesignImg from "../assets/home/desktop/image-web-design-large.jpg";
 import AppDesignImg from "../assets/home/desktop/image-app-design.jpg";
 import changeImg from "../assets/graphic-design/desktop/image-change.jpg"
@@ -9,6 +10,8 @@ import HeaderBgImg from "../assets/shared/desktop/bg-pattern-call-to-action.svg"
 import { Link } from "react-router-dom";
 
 export const GraphicDesign = () => {
+
+
     const projects = [
       {
         title: "WEB DESIGN",
@@ -44,7 +47,8 @@ export const GraphicDesign = () => {
   ]
   
   return (
-  <div className="sm:mx-10 lg:mx-16 ">
+  <div className="sm:mx-10 lg:mx-16">
+    <ScrollToTop />
     <section 
       className="bg-peach sm:rounded-lg text-white text-center"
       style={{

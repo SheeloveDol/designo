@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import ScrollToTop from "../components/ScrollToTop";
 import CanadaImg from "../assets/shared/desktop/illustration-canada.svg" 
 import AustraliaImg from "../assets/shared/desktop/illustration-australia.svg" 
 import UnitedKingdomImg from "../assets/shared/desktop/illustration-united-kingdom.svg" 
@@ -32,6 +33,7 @@ export const About = () => {
 
   return (
     <div className="sm:mx-10 lg:mx-16" >
+      <ScrollToTop />
       <section className="flex flex-col lg:flex-row">
         <div 
           className="h-64 lg:h-auto lg:w-2/5  sm:rounded-t-lg lg:rounded-r-lg lg:rounded-l-none lg:bg-aboutHeroDesktop bg-cover sm:bg-aboutHeroTablet sm:bg-cover  bg-aboutHeroMobile lg:bg-cover "

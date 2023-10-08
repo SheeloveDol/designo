@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
@@ -22,7 +23,6 @@ function App() {
     <div className="bg-white max-w-[1492px] mx-auto">
         <Navbar open={open} handleOpen={handleOpen} />
         <Routes>
-        
           <Route path="/" element={<Home />} />
           <Route path="/webDesign" element={<WebDesign />} />
           <Route path="/appDesign" element={<AppDesign />} />
