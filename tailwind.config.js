@@ -19,6 +19,10 @@ export default {
     extend: {
       backgroundImage: {
         'smallCircle': 'url("/src/assets/shared/desktop/bg-pattern-small-circle.svg ")',
+        'mobileCircle': 'url("/src/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg")',
+        'threeCircle': 'url("/src/assets/shared/desktop/bg-pattern-three-circles.svg")',
+        'twoCircle': 'url("/src/assets/shared/desktop/bg-pattern-two-circles.svg")',
+        'oneCircle': 'url("/src/assets/shared/desktop/bg-pattern-small-circle.svg")',
 
         'aboutHeroMobile': 'url("/src/assets/about/mobile/image-about-hero.jpg")',
         'aboutHeroTablet': 'url("/src/assets/about/tablet/image-about-hero.jpg")',
