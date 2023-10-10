@@ -15,11 +15,11 @@ export const ContactCard = ({
   return (
     <div>
       <section className="sm:flex sm:flex-col sm:gap-6 lg:flex-row mb-10 sm:mb-24 lg:mb-6">
-        <div className={`text-center ${flexItemOrder}`}>
+        <div className={`text-center ${flexItemOrder} `}>
           <img
             src={tabletImage}
             alt="Map showing location in Canada"
-            className="sm:block lg:hidden w-full sm:rounded-lg lg:rounded-lg"
+            className="sm:block h-72 sm:h-auto lg:hidden w-full sm:rounded-lg lg:rounded-lg"
           />
 
           <img
@@ -29,7 +29,7 @@ export const ContactCard = ({
           />
         </div>
 
-        <div className="bg-[#FFEAE9] text-center sm:text-left sm:pl-24 py-14 sm:py-20 sm:w-auto sm:rounded-lg lg:basis-2/3 grid items-center bg-twoCircle sm:bg-center sm:bg-no-repeat">
+        <div className="bg-[#FFEAE9] text-center sm:text-left sm:pl-24 py-14 sm:py-20 sm:w-auto sm:rounded-lg lg:basis-2/3 grid items-center bg-twoCircle sm:bg-center sm:bg-no-repeat md:h-96 lg:h-auto grow">
           <div>
             <h2 className="mb-6 text-peach text-2xl sm:text-3xl">{location}</h2>
           </div>

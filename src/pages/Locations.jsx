@@ -5,6 +5,7 @@ import AustraliaDesktopMapImg from "../assets/locations/desktop/image-map-austra
 import UkTabletMapImg from "../assets/locations/tablet/image-map-uk.png"
 import UkDesktopMapImg from "../assets/locations/desktop/image-map-united-kingdom.png"
 import { ContactCard } from "../components/ContactCard"
+import ScrollToTop from "../components/ScrollToTop"
 
 
 export const Locations = () => {
@@ -46,7 +47,8 @@ export const Locations = () => {
   ]
 
   return (
-    <div className="sm:mx-10 lg:mx-16 ">
+    <div className="sm:mx-10 lg:mx-16">
+      <ScrollToTop />
       {
         locationsData.map((item, index) => 
           <ContactCard
