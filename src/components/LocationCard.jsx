@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-
+import { Link } from "react-router-dom"
 
 export const LocationCard = ({ title, image, imageRotation, bgRotation, bottomMargin }) => {
   return (
@@ -12,14 +12,15 @@ export const LocationCard = ({ title, image, imageRotation, bgRotation, bottomMa
           </div>
           <div>
             <p className="mb-5 sm:text-xl text-darkGrey">{title}</p>
-            <button className="bg-peach hover:bg-lightPeach p-4 rounded-lg text-sm text-white"
-            >
-              SEE LOCATION
-            </button>
+            <Link to="/locations">
+              <button className="bg-peach hover:bg-lightPeach p-4 rounded-lg text-sm text-white"
+              >
+                SEE LOCATION
+              </button>
+            </Link>
           </div>
         </div>
     </div>
   )
 }
 
-// TODO: ADD LINK to the LOCATIONS Page and make sure that it links to the right part of that page

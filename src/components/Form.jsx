@@ -1,5 +1,6 @@
 import { useForm, Controller } from 'react-hook-form';
 
+
 const MyForm = () => {
   const { control, handleSubmit, formState, reset } = useForm();
   const onSubmit = (data) => {
@@ -16,7 +17,7 @@ const MyForm = () => {
           name="name"
           control={control}
           defaultValue=""
-          rules={{ required: 'Name is required' }}
+          rules={{ required: `Name is required!` }}
           render={({ field }) => (
             <input
               type="text"
@@ -27,7 +28,7 @@ const MyForm = () => {
           )} 
         />
         {formState.errors.name && (
-          <span className="text-red-500 absolute inset-y-0 right-0 pr-2">
+          <span className="text-xs sm:text-sm absolute inset-y-0 right-0 top-3 pr-2 italic">
             {formState.errors.name.message}
           </span>
         )}
@@ -39,7 +40,7 @@ const MyForm = () => {
           control={control}
           defaultValue=""
           rules={{
-            required: 'Email is required',
+            required: 'Email is required!',
             pattern: {
               value: /^\S+@\S+\.\S+$/,
               message: 'Invalid email format',
@@ -55,7 +56,7 @@ const MyForm = () => {
           )}
         />
         {formState.errors.email && (
-          <span className="text-red-500 absolute inset-y-0 right-0 pr-2">
+          <span className="text-xs sm:text-sm absolute inset-y-0 right-0 top-3 pr-2 italic">
             {formState.errors.email.message}
           </span>
         )}
@@ -66,7 +67,7 @@ const MyForm = () => {
           name="phone"
           control={control}
           defaultValue=""
-          rules={{ required: 'Phone is required' }}
+          rules={{ required: 'Phone is required!' }}
           render={({ field }) => (
             <input
               type="tel"
@@ -77,7 +78,7 @@ const MyForm = () => {
           )}
         />
         {formState.errors.phone && (
-          <span className="text-red-500 absolute inset-y-0 right-0 pr-2">
+          <span className="text-xs sm:text-sm absolute inset-y-0 right-0 top-3 pr-2 italic">
             {formState.errors.phone.message}
           </span>
         )}
@@ -88,17 +89,17 @@ const MyForm = () => {
           name="message"
           control={control}
           defaultValue=""
-          rules={{ required: 'Message is required' }}
+          rules={{ required: 'Message is required!' }}
           render={({ field }) => (
             <textarea
               {...field}
               className="w-full p-2 bg-peach text-sm placeholder-white/70 border-none outline-none"
-              placeholder="Message"
+              placeholder="Your Message"
             />
           )}
         />
         {formState.errors.message && (
-          <span className="text-red-500 absolute inset-y-0 right-0 pr-2">
+          <span className="text-xs sm:text-sm absolute inset-y-0 right-0 top-3 pr-2 italic">
             {formState.errors.message.message}
           </span>
         )}
