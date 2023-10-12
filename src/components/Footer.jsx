@@ -14,9 +14,10 @@ export const Footer = () => {
 
   const pathStyles = {
     "/contact": {
-      marginTop: "4rem",
+    
       paddingTop: "1rem",
     },
+    
   };
 
   const currentPath = location.pathname;
@@ -28,7 +29,8 @@ export const Footer = () => {
   return (
     <footer
       style={{ ...style }}
-      className="bg-black border-none mt-20 pb-20 relative"
+      
+      className="bg-black border-none mt-20 pb-20 relative target:bg-peach"
     >
       {currentPath != "/contact" && (
         <div className="bg-white py-16 pt-28 sm:pt-44 relative"></div>
@@ -37,7 +39,10 @@ export const Footer = () => {
       <div>{currentPath != "/contact" && <CallToAction />}</div>
 
       <div>
-        <div className="sm:mx-10 lg:mx-16 pt-36 sm:pt-20 flex flex-col items-center just gap-10">
+        <div 
+          style={{ ...style }}
+          className="sm:mx-10 lg:mx-16 pt-36 sm:pt-20 flex flex-col items-center gap-10"
+          >
           <div className="flex flex-col sm:flex-row items-center w-[95%] sm:w-full sm:justify-between divide-y-[0.2px] sm:divide-y-0 sm:border-b sm:pb-5">
             <div className=" mt-10">
               <Link to="/">
