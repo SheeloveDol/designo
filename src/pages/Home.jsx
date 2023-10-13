@@ -81,7 +81,7 @@ export const Home = () => {
             backgroundSize: "",
           }}
         >
-          <div className="lg:flex mx-4 lg:mx-0 lg:pl-20xnxx">
+          <div className="lg:flex mx-4 lg:mx-0 lg:pl-20">
             <div className="lg:text-left px-5 sm:px-20 lg:px-0 md:pt-8 lg:pl-20 lg:pr-28 ">
               <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl pt-16  leading-10">
                 Award-winning custom designs and digital branding solutions
@@ -112,7 +112,7 @@ export const Home = () => {
 
         {/* -----------PROJECTS SECTION ------------*/}
 
-        <section className="mt-32 lg:h-96 mx-6 sm:mx-0 gap-6 grid  lg:grid-cols-2 ">
+        <section className="mt-24 lg:h-96 mx-6 sm:mx-0 gap-6 grid  lg:grid-cols-2 ">
           {/*Web Design card */}
           {projects.map((item, index) => (
             <Link key={index} to={item.linkTo} className={item.className}>
@@ -126,7 +126,7 @@ export const Home = () => {
 
         {/*----------CORE VALUES SECTION----------- */}
 
-        <section className="mt-32 mx-6 lg:mx-0 flex flex-col lg:flex-row gap-20 justify-center items-center">
+        <section className="mt-24 mx-6 lg:mx-0 flex flex-col lg:flex-row gap-20 justify-center items-center">
           {coreValues.map((item, index) => (
             <CoreValuesCard
               key={index}
@@ -144,20 +144,6 @@ export const Home = () => {
   );
 };
 
-/* 
 
-<div
-          className="relative overflow-hidden h-[448px] "
-          style={{
-            backgroundImage: `url('${HeroImage}')`,
-            backgroundPosition: "50% 18%",
-          }}
-        >
-          /* <img 
-            src={HeroImage} alt="picture of a cellular phone" 
-            className='absolute  mx-auto w-[600px] '
-          /> *
-          
-          </div>
 
-*/
+

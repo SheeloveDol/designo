@@ -14,7 +14,7 @@ export const ContactCard = ({
 }) => {
   return (
     <div>
-      <section className="sm:flex sm:flex-col sm:gap-6 lg:flex-row mb-10 sm:mb-24 lg:mb-6">
+      <section className="sm:flex sm:flex-col sm:gap-6 lg:flex-row mb-10 sm:mb-20 lg:mb-6">
         <div className={`text-center ${flexItemOrder} `}>
           <img
             src={tabletImage}
