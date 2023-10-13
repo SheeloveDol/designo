@@ -73,11 +73,11 @@ export const Footer = () => {
               <p>M: contact@designo.co</p>
             </div>
             <div className="flex justify-between h-7 w-44 self-center sm:self-end">
-              <img src={Facebook} alt="" />
-              <img src={Youtube} alt="" />
-              <img src={Twitter} alt="" />
-              <img src={Pinterest} alt="" />
-              <img src={Instagram} alt="" />
+              <img src={Facebook} alt="Facebook Icon" />
+              <img src={Youtube} alt="YouTube Icon" />
+              <img src={Twitter} alt="Twitter Icon" />
+              <img src={Pinterest} alt="Pinterest Icon" />
+              <img src={Instagram} alt="Instagram Icon" />
             </div>
           </div>
         </div>
