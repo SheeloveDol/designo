@@ -23,9 +23,11 @@ export const CallToAction = () => {
           </p>
         </div>
 
-        <button className="text-black bg-lightGrey p-4 rounded-lg lg:flex-none h-14 self-center hover:bg-lightPeach hover:text-white">
-          <Link to="/contact">GET IN TOUCH</Link>
-        </button>
+        <Link to="/contact">
+          <button className="text-black bg-lightGrey p-4 rounded-lg lg:flex-none h-14 self-center hover:bg-lightPeach hover:text-white">
+            GET IN TOUCH
+          </button>
+        </Link>
       </div>
     </div>
   );
