@@ -18,7 +18,11 @@ export const CoreValuesCard = ({
           }}
           className="bg-no-repeat inline-block min-w-[202px] h-[202px]"
         >
-          <img src={image} className={bgImgRotation} />
+          <img
+            src={image}
+            alt="Illustratrion meant to convey core value"
+            className={bgImgRotation}
+          />
         </div>
         <div className="text-center sm:text-left lg:text-center">
           <h3 className="text-3xl text-black py-10 sm:py-4 tracking-[0.4rem]">
