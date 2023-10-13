@@ -10,9 +10,9 @@ export const BranchCards = ({ backgroundImg, title }) => {
       }}
     >
       <div className="flex flex-col items-center justify-center h-full w-full hover:bg-lightPeach hover:opacity-80">
-        <h3 className="text-2xl sm:text-4xl lg:mb-4 text-white tracking-[0.2rem]">
+        <h2 className="text-2xl sm:text-4xl lg:mb-4 text-white tracking-[0.2rem]">
           {title}
-        </h3>
+        </h2>
         <div className="flex items-center">
           <p className="text-white text-xs lg:text-xs leading-9 tracking-[0.5rem]">
             VIEW PROJECTS
