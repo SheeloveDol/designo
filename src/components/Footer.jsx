@@ -65,7 +65,7 @@ export const Footer = () => {
             <div className=" text-center sm:text-left">
               <h3>Designo Central Office</h3>
               <p>3886 Wellington Street</p>
-              <p>Toronto, Onntario M9C 3J5 </p>
+              <p>Toronto, Ontario M9C 3J5 </p>
             </div>
             <div className="text-center sm:text-left">
               <h3>Contact US (Central Office)</h3>
