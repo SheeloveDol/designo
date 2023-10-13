@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 
-
 export const ContactCard = ({
   desktopImage,
   tabletImage,
@@ -53,7 +52,7 @@ export const ContactCard = ({
 };
 
 {
-    /* 
+  /* 
     <section className="sm:flex sm:flex-col sm:gap-5 lg:flex-row">
         <div className="text-center lg:order-2 ">
           <img 

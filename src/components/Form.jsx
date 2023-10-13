@@ -1,17 +1,18 @@
-import { useForm, Controller } from 'react-hook-form';
-
+import { useForm, Controller } from "react-hook-form";
 
 const MyForm = () => {
   const { control, handleSubmit, formState, reset } = useForm();
   const onSubmit = (data) => {
     // You can handle form submission here
     // console.log(data);
-    alert(`Hi ${data.name}, thanks for getting in touch. We will get back to you within 24 hours.`)
+    alert(
+      `Hi ${data.name}, thanks for getting in touch. We will get back to you within 24 hours.`
+    );
     reset();
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className=''>
+    <form onSubmit={handleSubmit(onSubmit)} className="">
       <div className="relative border-b hover:border-b-2">
         <Controller
           name="name"
@@ -25,7 +26,7 @@ const MyForm = () => {
               className="w-full p-2  bg-peach bg-opacity-0 text-sm placeholder-white/70  placeholder- border-none outline-none "
               placeholder="Name"
             />
-          )} 
+          )}
         />
         {formState.errors.name && (
           <span className="text-xs sm:text-sm absolute inset-y-0 right-0 top-3 pr-2 italic">
@@ -40,10 +41,10 @@ const MyForm = () => {
           control={control}
           defaultValue=""
           rules={{
-            required: 'Email is required!',
+            required: "Email is required!",
             pattern: {
               value: /^\S+@\S+\.\S+$/,
-              message: 'Invalid email format',
+              message: "Invalid email format",
             },
           }}
           render={({ field }) => (
@@ -67,7 +68,7 @@ const MyForm = () => {
           name="phone"
           control={control}
           defaultValue=""
-          rules={{ required: 'Phone is required!' }}
+          rules={{ required: "Phone is required!" }}
           render={({ field }) => (
             <input
               type="tel"
@@ -89,7 +90,7 @@ const MyForm = () => {
           name="message"
           control={control}
           defaultValue=""
-          rules={{ required: 'Message is required!' }}
+          rules={{ required: "Message is required!" }}
           render={({ field }) => (
             <textarea
               {...field}
@@ -104,14 +105,14 @@ const MyForm = () => {
           </span>
         )}
       </div>
-        <div className='text-center lg:text-right'>
-            <button 
-                type="submit"
-                className='bg-white text-black text-sm mt-8 mb-10 py-2 px-8 rounded-lg hover:bg-lightPeach hover:text-white'
-                >
-                    SUBMIT
-                </button>
-        </div>
+      <div className="text-center lg:text-right">
+        <button
+          type="submit"
+          className="bg-white text-black text-sm mt-8 mb-10 py-2 px-8 rounded-lg hover:bg-lightPeach hover:text-white"
+        >
+          SUBMIT
+        </button>
+      </div>
     </form>
   );
 };

@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 export const MobileMenuModal = ({ open, handleMenuItemClick }) => {
   return (
     <div
-      className={open ? `sm:hidden absolute top-[4.5rem] h-full w-full` : `hidden`}
+      className={
+        open ? `sm:hidden absolute top-[4.5rem] h-full w-full` : `hidden`
+      }
     >
       <nav>
         <ul className="pl-6 py-12 text-white bg-black">

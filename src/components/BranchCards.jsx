@@ -20,6 +20,6 @@ export const BranchCards = ({ backgroundImg, title }) => {
           <img src={RightArrow} alt="Right arrow" className="h-2 ml-2" />
         </div>
       </div>
-    </div> 
+    </div>
   );
 };
