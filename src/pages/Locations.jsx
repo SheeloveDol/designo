@@ -1,17 +1,10 @@
-import CanadaTabletMapImg from "../assets/locations/tablet/image-map-canada.png";
-import CanadaDesktopMapImg from "../assets/locations/desktop/image-map-canada.png";
-import AustraliaTabletMapImg from "../assets/locations/tablet/image-map-australia.png";
-import AustraliaDesktopMapImg from "../assets/locations/desktop/image-map-australia.png";
-import UkTabletMapImg from "../assets/locations/tablet/image-map-uk.png";
-import UkDesktopMapImg from "../assets/locations/desktop/image-map-united-kingdom.png";
 import { ContactCard } from "../components/ContactCard";
 import ScrollToTop from "../components/ScrollToTop";
 
 export const Locations = () => {
   const locationsData = [
     {
-      desktopImg: `${CanadaDesktopMapImg}`,
-      tabletImg: `${CanadaTabletMapImg}`,
+      position: [43.64414, -79.39456],
       flexItemOrder: "lg:order-1",
       location: "CANADA",
       officeName: "Designo Central Office",
@@ -21,8 +14,7 @@ export const Locations = () => {
       email: "contact@designo.co",
     },
     {
-      desktopImg: `${AustraliaDesktopMapImg}`,
-      tabletImg: `${AustraliaTabletMapImg}`,
+      position: [-30.32928, 149.78827],
       flexItemOrder: '"lg:order-2"',
       location: "AUSTRALIA",
       officeName: "Designo AU Office",
@@ -32,8 +24,7 @@ export const Locations = () => {
       email: "contact@designo.au",
     },
     {
-      desktopImg: `${UkDesktopMapImg}`,
-      tabletImg: `${UkTabletMapImg}`,
+      position: [53.71041, -1.34175],
       flexItemOrder: "lg:order-1",
       location: "United Kingdom",
       officeName: "Designo UK Office",
@@ -50,8 +41,7 @@ export const Locations = () => {
       {locationsData.map((item, index) => (
         <ContactCard
           key={index}
-          desktopImage={item.desktopImg}
-          tabletImage={item.tabletImg}
+          position={item.position}
           flexItemOrder={item.flexItemOrder}
           location={item.location}
           officeName={item.officeName}
@@ -64,3 +54,5 @@ export const Locations = () => {
     </div>
   );
 };
+
+
