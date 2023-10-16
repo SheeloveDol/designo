@@ -14,7 +14,7 @@ export const MobileMenuModal = ({ open, handleMenuItemClick }) => {
             onClick={handleMenuItemClick}
             className="pb-5 text-xl cursor-pointer"
           >
-            <Link to="/about">OUR COMPANY</Link>
+            <Link to="/about">OUR  COMPANY</Link>
           </li>
           <li
             onClick={handleMenuItemClick}

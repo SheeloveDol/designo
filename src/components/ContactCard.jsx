@@ -14,8 +14,8 @@ export const ContactCard = ({
 }) => {
   return (
     <div>
-      <section className="sm:flex sm:flex-col sm:gap-6 lg:flex-row mb-10 sm:mb-20 lg:mb-6">
-        <div className={`text-center ${flexItemOrder} overflow-hidden sm:rounded-lg `}>
+      <section className="sm:flex sm:flex-col sm:gap-6 lg:flex-row mb-10 sm:mb-20 lg:mb-6 relative">
+        <div className={`text-center ${flexItemOrder} overflow-hidden sm:rounded-lg relative -z-0`}>
           <LeafletMap position={position} />
         </div>
 
