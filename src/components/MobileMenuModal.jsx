@@ -27,7 +27,7 @@ export const MobileMenuModal = ({ open, handleMenuItemClick }) => {
           </li>
         </ul>
       </nav>
-      <div className="h-full bg-black opacity-40"></div>
+      <div className="h-[120rem] bg-black opacity-40"></div>
     </div>
   );
 };
