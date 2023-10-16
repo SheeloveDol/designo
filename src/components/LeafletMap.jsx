@@ -11,11 +11,12 @@ export const LeafletMap = ({ position }) => {
   })
 
   return (
-    <div className=" h-72 lg:w-[25rem]  w-full sm:rounded-lg lg:rounded-lg">
+    <div className="h-72 lg:w-[25rem]  w-full  lg:rounded-lg lg:h-full">
       <MapContainer
         center={position}
         zoom={16}
-        style={{ height: "100%", width: "100%" }}
+        style={{ height: "100%", width: "100%"}}
+        
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
