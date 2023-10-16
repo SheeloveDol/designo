@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 
 export const LeafletMap = ({ position }) => {
   return (
-    <div className=" h-72 lg:w-[25rem]  w-full sm:rounded-lg lg:rounded-lg border">
+    <div className=" h-72 lg:w-[25rem]  w-full sm:rounded-lg lg:rounded-lg">
       <MapContainer
         center={position}
         zoom={16}
